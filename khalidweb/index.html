@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is my first website">
+    <meta name="keywords" content="khalid,khalid hassan,my first website,khalid first website">
+    <meta name="author" content="Khalid Hassan">
+    <title>KHALID</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="WhatsApp Image 2024-06-13 at 20.50.21_d8e00bb9.jpg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            overflow-x: hidden;
+            background-color: rgb(226, 219, 208);
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .navbar {
+            display: flex;
+            /* justify-content: center; */
+            justify-content: flex-end;
+            align-items: center;
+            padding: 7px;
+            perspective: 300px;
+
+        }
+
+        .container {
+            background-color: black;
+            width: 100%;
+            height: 52px;
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+            z-index: 1;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(226, 219, 208);
+        }
+
+        .footer {
+            bottom: 0;
+            height: 100px;
+            width: 100%;
+            margin-bottom: 0;
+            background-color: black;
+            color: rgb(248, 204, 123);
+            text-align: center;
+            background-color: black;
+            border-top: 9px solid rgb(252, 213, 141);
+
+        }
+
+        .logo {
+            font-size: 25px;
+            margin-left: 3%;
+            margin-right: auto;
+            font-weight: 900;
+            font-family: "Lobster", sans-serif;
+            font-weight: 400;
+            animation: abc 3.5s ease-in 0s 1 reverse,
+                def 1.5s ease-in 3s 1 forwards;
+            transition: 1s;
+            background: linear-gradient(to right bottom, rgb(245, 207, 137), rgb(221, 165, 59));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        @keyframes def {
+            from {}
+
+            to {
+                letter-spacing: 10px;
+                transition: 1s;
+            }
+
+        }
+
+        @keyframes abc {
+            from {}
+
+            to {
+                transform: translatez(200px);
+            }
+        }
+
+        .box {
+            width: 350px;
+            height: max-content;
+            align-self: center;
+            margin-top: 20px;
+            border-radius: 7px;
+            box-shadow: 8px 9px 16px 2px #888888;
+            transition: 1s;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 50px;
+
+
+        }
+
+        .box:hover {
+            transform: scale(1);
+            box-shadow: 2px 2.25px 4px 0.5px #888888;
+            transition: 0.2s;
+        }
+
+        .box>h1 {
+            font-family: "Lobster", sans-serif;
+            background: repeating-linear-gradient(to right bottom, black, red);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .box>h3 {
+            font-family: "Lobster", sans-serif;
+        }
+
+        .insta {
+            align-self: flex-start;
+            margin-top: 40px;
+            margin-left: 10px;
+            font-family: "Dancing Script", cursive;
+            font-size: larger;
+            background: linear-gradient(to right, orange, red, blue);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            margin-left: 10px;
+            align-self: flex-start;
+            margin-top: 10px;
+        }
+
+        .bi {
+            fill: rgb(240, 104, 104);
+        }
+
+        .phone {
+            color: rgb(7, 131, 7);
+        }
+
+        .email {
+            color: rgb(109, 108, 108);
+        }
+
+        .a {
+            margin: 19px;
+        }
+
+        .nb {
+            height: 37px;
+            width: max-content;
+            margin-right: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        img {
+            width: 94%;
+            border-radius: 11px;
+        }
+
+        .nb:hover {
+            transform: scale(0.9);
+            color: wheat;
+        }
+
+        @media only screen and (max-width:400px) {
+            .box {
+                width: 260px;
+            }
+
+            .nb {
+                height: 35px;
+                width: max-content;
+                margin-right: 7px;
+            }
+
+            h5 {
+                font-size: 10px;
+            }
+            }
+            @media only screen and (min-width:600px) {
+                .box {
+                    width: 400px;
+                }
+
+
+            }
+
+            @media only screen and (min-width:860px) {
+                .box {
+                    width: 700px;
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="navbar">
+            <div class="logo">KHALID</div>
+            <a class="nb" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                    viewBox="0 -960 960 960" width="24px" fill="wheat">
+                    <path
+                        d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+                </svg>
+                <h5>HOME</h5>
+            </a>
+            <a class="nb" href="pictures.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                    viewBox="0 -960 960 960" width="24px" fill="wheat">
+                    <path
+                        d="M360-400h400L622-580l-92 120-62-80-108 140Zm-40 160q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z" />
+                </svg>
+                <h5>PICTURES</h5>
+            </a>
+        </header>
+    </div>
+    </div>
+    <div class="box">
+        <h1>EDUCATION</h1>
+        <img src="https://tse1.mm.bing.net/th?id=OIP.06YDwXgWciF-kqmDxdaIxAHaEK&pid=Api&P=0&h=220" alt="img">
+        <h3 class="a">I am currently a 9th grade student at Bahria College in Islamabad, where I completed my 7th and
+            8th grades. Prior to that, I attended Beacon House for my 6th grade and Sadiq Public School (SPS) in
+            Bahawalpur for my 5th grade. My early education took place in Quetta. </h3>
+    </div>
+    <div class="box">
+        <h1>SPORTS</h1>
+        <img src="https://tse2.mm.bing.net/th?id=OIP.aTVZbj-oc8poZxSHnfDtkQHaE9&pid=Api&P=0&h=220" class="img"
+            alt="img">
+        <h3 class="a">I have a passion for football and have been playing the sport since my childhood. I currently
+            serve as the captain of my school team at Bahria College, Islamabad, a position that has taught me valuable
+            leadership skills and teamwork.</h3>
+    </div>
+    <div class="box">
+        <h1>LANGUAGES I KNOW</h1>
+        <img src="https://tse1.mm.bing.net/th?id=OIP.oJWvelYTV9jAe3MMNtvXJQHaEK&pid=Api&P=0&h=220" alt="img">
+        <h2>HTML<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                class="bi bi-filetype-html" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z" />
+            </svg></h2>
+        <h2>CSS<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                class="bi bi-filetype-css" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.397 14.841a1.13 1.13 0 0 0 .401.823q.195.162.478.252.284.091.665.091.507 0 .859-.158.354-.158.539-.44.187-.284.187-.656 0-.336-.134-.56a1 1 0 0 0-.375-.357 2 2 0 0 0-.566-.21l-.621-.144a1 1 0 0 1-.404-.176.37.37 0 0 1-.144-.299q0-.234.185-.384.188-.152.512-.152.214 0 .37.068a.6.6 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.1 1.1 0 0 0-.2-.566 1.2 1.2 0 0 0-.5-.41 1.8 1.8 0 0 0-.78-.152q-.439 0-.776.15-.337.149-.527.421-.19.273-.19.639 0 .302.122.524.124.223.352.367.228.143.539.213l.618.144q.31.073.463.193a.39.39 0 0 1 .152.326.5.5 0 0 1-.085.29.56.56 0 0 1-.255.193q-.167.07-.413.07-.175 0-.32-.04a.8.8 0 0 1-.248-.115.58.58 0 0 1-.255-.384zM.806 13.693q0-.373.102-.633a.87.87 0 0 1 .302-.399.8.8 0 0 1 .475-.137q.225 0 .398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.4 1.4 0 0 0-.489-.272 1.8 1.8 0 0 0-.606-.097q-.534 0-.911.223-.375.222-.572.632-.195.41-.196.979v.498q0 .568.193.976.197.407.572.626.375.217.914.217.439 0 .785-.164t.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.8.8 0 0 1-.118.363.7.7 0 0 1-.272.25.9.9 0 0 1-.401.087.85.85 0 0 1-.478-.132.83.83 0 0 1-.299-.392 1.7 1.7 0 0 1-.102-.627zM6.78 15.29a1.2 1.2 0 0 1-.111-.449h.764a.58.58 0 0 0 .255.384q.106.073.25.114.142.041.319.041.245 0 .413-.07a.56.56 0 0 0 .255-.193.5.5 0 0 0 .085-.29.39.39 0 0 0-.153-.326q-.152-.12-.463-.193l-.618-.143a1.7 1.7 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.1 1.1 0 0 1-.123-.524q0-.366.19-.639.19-.272.527-.422t.777-.149q.456 0 .779.152.326.153.5.41.18.255.2.566h-.75a.56.56 0 0 0-.12-.258.6.6 0 0 0-.246-.181.9.9 0 0 0-.37-.068q-.324 0-.512.152a.47.47 0 0 0-.184.384q0 .18.143.3a1 1 0 0 0 .404.175l.621.143q.326.075.566.211t.375.358.135.56q0 .37-.188.656a1.2 1.2 0 0 1-.539.439q-.351.158-.858.158-.381 0-.665-.09a1.4 1.4 0 0 1-.478-.252 1.1 1.1 0 0 1-.29-.375" />
+            </svg></h2>
+    </div>
+    <div class="box">
+        <h1>CONTACT</h1>
+        <img src="https://tse1.mm.bing.net/th?id=OIP.VdBJVwZXp-38IIdA0N-BPAHaDa&pid=Api&P=0&h=220"
+            id="yui_3_5_1_1_1717854286690_1440" alt="img">
+        <div class="insta">
+            <h2>instagram <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-instagram"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                </svg></h2>
+        </div>
+        <h3>khalid_hassan_09</h3>
+        <h2 class="phone">phone<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px" fill="green">
+                <path
+                    d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+            </svg></h2>
+        <h3>0321-8020031</h3>
+        <h2 class="email">Email&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentcolor"
+                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+            </svg></h2>
+        <h3>khalidhassan20031@gmail.com</h3>
+    </div>
+    <main>
+        <!-- <button class="button">Contact</button> -->
+    </main>
+    <footer>
+        <div class="footer">
+            &copy; copy right reserved
+        </div>
+    </footer>
+  
+</body>
+
+</html>
